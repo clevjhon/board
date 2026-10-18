@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>oeneyeOS - Floppy Max 2.88MB + VHD</title>
+</head>
+<body>
+
+  <h1>oeneyeOS - Floppy Max 2.88MB + VHD</h1>
+
+  <p>A: oeneyeOS.img (2.88M) | B: data.img (2.88M) | C: date.img</p>
+  <p>
+    D: <a href="https://github.com/Colegio-San-Caio/demo-repository/releases/download/v1.0/GNUoeneyeALPINEunix.img">GNUoeneyeALPINEunix.img</a> (357 MB) | 
+    SHA-256: <code>a91847bcda43baca5a643be9769ebfd17bd5c371718ed8eb63d9e5f628c49188</code>
+  </p>
+  <p>
+    X: <a href="https://github.com/Colegio-San-Caio/demo-repository/releases/download/v1.0/workshop.img">workshop.img</a> (1.4 MB) | 
+    <a href="https://github.com/Colegio-San-Caio/demo-repository/releases/download/v1.0/fily.img">fily.img</a> (360 KB)
+  </p>
+  <p>
+    workshop.img SHA-256: <code>8653aa17d505212d429548e197e3e6a86a5295552a1b75aac896ab5b00b67fda</code><br>
+    fily.img SHA-256: <code>00accd519026d7b17f738bdf1eb96151c853b8a97fdcbb807d093c789786a14a</code>
+  </p>
+  <p>
+    <a href="oeneyeOS.img">Download A</a> | 
+    <a href="data.img">Download B</a> | 
+    <a href="date.img">Download C</a>
+  </p>
+  <code>qemu-system-i386 -fda oeneyeOS.img -fdb data.img -hda date.img</code>
+  <p>Back up important data before using the disk-image tools. A defect in disk-writing code can damage data.</p>
+
+  <h2>License (EULA)</h2>
+  <p>Free to use, modify and share. Don't present a modified version as the official release. The original oeneye code is MIT-licensed, the software is provided as is, and it is not security-certified.</p>
+  <p>
+    <a href="assets/OENEYE_EULA.pdf">oeneye OS EULA, version 1.0 (PDF)</a><br>
+    <span>DOI: <a href="https://doi.org/10.5281/zenodo.22978006">10.5281/zenodo.22978006</a></span>
+  </p>
+
+  
+git clone https://github.com/clevjhon/board.git
+cd board
+
+# (Overwrite index.html with the fixed content)
+cat << 'EOF' > index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>oeneyeOS - Floppy Max 2.88MB + VHD</title>
+</head>
+<body>
+
+  <h1>oeneyeOS - Floppy Max 2.88MB + VHD</h1>
+
+  <p>A: oeneyeOS.img (2.88M) | B: data.img (2.88M) | C: date.img</p>
+  <p>
+    D: <a href="https://github.com/Colegio-San-Caio/demo-repository/releases/download/v1.0/GNUoeneyeALPINEunix.img">GNUoeneyeALPINEunix.img</a> (357 MB) | 
+    SHA-256: <code>a91847bcda43baca5a643be9769ebfd17bd5c371718ed8eb63d9e5f628c49188</code>
+  </p>
+  <p>
+    X: <a href="https://github.com/Colegio-San-Caio/demo-repository/releases/download/v1.0/workshop.img">workshop.img</a> (1.4 MB) | 
+    <a href="https://github.com/Colegio-San-Caio/demo-repository/releases/download/v1.0/fily.img">fily.img</a> (360 KB)
+  </p>
+  <p>
+    workshop.img SHA-256: <code>8653aa17d505212d429548e197e3e6a86a5295552a1b75aac896ab5b00b67fda</code><br>
+    fily.img SHA-256: <code>00accd519026d7b17f738bdf1eb96151c853b8a97fdcbb807d093c789786a14a</code>
+  </p>
+  <p>
+    <a href="oeneyeOS.img">Download A</a> | 
+    <a href="data.img">Download B</a> | 
+    <a href="date.img">Download C</a>
+  </p>
+  <code>qemu-system-i386 -fda oeneyeOS.img -fdb data.img -hda date.img</code>
+  <p>Back up important data before using the disk-image tools. A defect in disk-writing code can damage data.</p>
+
+  <h2>License (EULA)</h2>
+  <p>Free to use, modify and share. Don't present a modified version as the official release. The original oeneye code is MIT-licensed, the software is provided as is, and it is not security-certified.</p>
+  <p>
+    <a href="assets/OENEYE_EULA.pdf">oeneye OS EULA, version 1.0 (PDF)</a><br>
+    <span>DOI: <a href="https://doi.org/10.5281/zenodo.22978006">10.5281/zenodo.22978006</a></span>
+  </p>
+
+  <h2>Book</h2>
+  <img alt="Cover of MOSFETQ, Technologie als Gesellschaftstreiber, by Kai Olaf Ketelhut" src="assets/mosfetq-cover.jpeg">
+  <p>
+    <strong>MOSFETQ – Technologie als Gesellschaftstreiber</strong><br>
+    Kai Olaf Ketelhut<br>
+    Fieldberry Group, Berlin<br>
+    ISBN 978-3-00-068463-0 | PDF | 21,00 € (+ tax)
+  </p>
+  <p>
+    <a href="tex.html">Book source (TeX)</a> | 
+    <a href="MOSFETQexchange/output/MOSFETQ_Master_Manuscript.pdf">Book (PDF)</a> | 
+    <a href="assets/mosfetq-record.pdf">Bibliographic record (PDF)</a> | 
+    <a href="https://bunq.me/9783000684630">Order / pay</a>
+  </p>
+
+  <h2>Verify your download</h2>
+  <p>SHA-256 checksums for the disk images. Put both images and the checksum file in one folder, then run the check.</p>
+  <code>2741dfdbc24c3514ffcd04411a108e3b9b76ad0a7522c2a4b360cdbb27b9d42d  oeneyeOS.img
+1b7b350b66f56a4646573de32f7fea22a050cdf99672d8751c49043abc82ebab  data.img</code><br>
+  <code>sha256sum --check checksum.sha256</code>
+  <p><a href="assets/checksum.sha256">checksum.sha256</a></p>
+  <p>A matching checksum shows the file is the one published here. It doesn't prove the contents are safe.</p>
+
+  <h2>Demo: python3 emu_dos.py</h2>
+  <p>Runs in your browser with Pyodide (Python compiled to WebAssembly). Nothing is sent to a server.</p>
+  <div>
+    <div><span>emu_dos.py</span><span><a href="emu_dos.py" target="_blank">Raw</a></span></div>
+    <pre>Loading emu_dos.py...</pre>
+  </div>
+
+  <pre>$ python3 emu_dos.py
+(press Run)</pre>
+
+  <p>
+    <a href="galeria.html">Galeria</a> | 
+    <a href="macro.html">Macro</a> | 
+    <a href="proxy.html">Proxy</a> | 
+    <a href="bluh.html">Bluh</a>
+  </p>
+
+  <div>
+    <h3>Archives (<span id="archive-count">0</span>) Last: <span id="archive-last">N/A</span></h3>
+    <ul id="archive-list"></ul>
+    <a href="jp.html">JP</a> | <a href="changelog.html">Changelog</a>
+  </div>
+
+  <p>Last updated: 2026-10-18 17:05 UTC</p>
+
+  <hr>
+  <h2>🖨️ Verified System Manifest Binaries</h2>
+
+</body>
+</html>
